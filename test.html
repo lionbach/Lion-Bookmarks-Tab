@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegador de Archivos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 32px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*min-height: 100vh;*/
+            background-color: #f4f4f4;
+        }
+
+        .icon-back {
+            position: absolute;
+            left: 16px;
+            /* Ajusta según el espacio deseado */
+            top: 50%;
+            transform: translateY(-50%);
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+        }
+
+        .icon-back:hover {
+            background-color: #f4f4f4;
+            /* Color al pasar el mouse */
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            width: 80%;
+            /*max-width: 600px;*/
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            /* Alinea verticalmente los elementos */
+            justify-content: center;
+            /* Centra horizontalmente el título */
+            position: relative;
+            text-align: center;
+            min-height: 64px;
+            margin-bottom: 64px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
+            /* Columnas flexibles */
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            /*background-color: aquamarine;*/
+            display: flex;
+            flex-direction: column;
+            /* Organiza los elementos en columna */
+            align-items: center;
+            /* Centra horizontalmente */
+            justify-content: flex-start;
+            /* Alinea el contenido desde arriba */
+            text-align: center;
+            /* Centra el texto */
+            margin: 8px;
+            border-radius: 8px;
+        }
+
+        .item:hover {
+            background-color: #f4f4f4;
+            /* Color al pasar el mouse */
+        }
+
+        .item span {
+            font-size: 16px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            /* Evita que el texto se desborde */
+        }
+
+        body p {
+            margin-top: 32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header card">
+        <img class="icon-back" src="img/back.png" alt="Atras">
+        <h2>Carpeta Actual</h2>
+    </div>
+
+    <!-- File and Folder Icons -->
+    <div class="items card">
+        <!-- Folder Items -->
+        <div class="item">
+            <img class="icon" src="img/folder.png" alt="Carpeta">
+            <span>Carpeta 1</span>
+        </div>
+        <div class="item">
+            <img class="icon" src="img/folder.png" alt="Carpeta">
+            <span>Carpeta 2</span>
+        </div>
+
+        <!-- File Items -->
+        <div class="item">
+            <img class="icon" src="img/link.png" alt="Archivo">
+            <span>Archivo 1 lorem ipsum at dolor no se que coso.</span>
+        </div>
+        <div class="item">
+            <img class="icon" src="img/link.png" alt="Archivo">
+            <span>Archivo 2 Archivo 2 Archivo 2</span>
+        </div>
+        <div class="item">
+            <img class="icon" src="img/link.png" alt="Archivo">
+            <span>Archivo 2</span>
+        </div>
+    </div>
+    <p>Created by Lionbach.</p>
+</body>
+
+</html>

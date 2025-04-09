@@ -1,0 +1,19 @@
+{
+    "admin.google.com": "https://ssl.gstatic.com/images/branding/product/1x/admin_2020q4_64dp.png",
+    "calendar.google.com": "https://ssl.gstatic.com/images/branding/product/1x/calendar_2020q4_64dp.png",
+    "cloudskillsboost.google": "https://www.gstatic.com/pantheon/images/welcome/supercloud.svg",
+    "console.cloud.google.com": "https://www.gstatic.com/pantheon/images/welcome/supercloud.svg",
+    "docs.google.com": "https://ssl.gstatic.com/images/branding/product/1x/docs_2020q4_64dp.png",
+    "drive.google.com": "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_64dp.png",
+    "gemini.google.com": "https://www.gstatic.com/cloud/images/navigation/gemini.png",
+    "kimai.": "https://demo.kimai.org/touch-icon-192x192.png",
+    "mail.google.com": "https://ssl.gstatic.com/images/branding/product/1x/gmail_2020q4_64dp.png",
+    "meet.google.com": "https://ssl.gstatic.com/images/branding/product/1x/meet_2020q4_64dp.png",
+    "photos.google.com": "https://ssl.gstatic.com/images/branding/product/2x/photos_32dp.png",
+    "sheets.google.com": "https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico",
+    "slides.google.com": "https://ssl.gstatic.com/docs/presentations/images/favicon5.ico",
+    "stackoverflow.com": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+    "translate.google.com": "https://www.gstatic.com/translate/favicon.ico",
+    "youtube.com": "https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144_v2.png"
+}
+

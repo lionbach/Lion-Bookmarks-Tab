@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmarks Reader",
+  "version": "1.0",
+  "description": "Lee y muestra los favoritos del usuario.",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "main.html"
+  },
+  "action": {
+    "default_title": "Abrir página"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "img/bookmark.png",
+    "48": "img/bookmark.png",
+    "128": "img/bookmark.png"
+  }
+}

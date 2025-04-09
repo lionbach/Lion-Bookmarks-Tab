@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             itemDiv.appendChild(linkName);
 
             itemDiv.addEventListener("click", () => {
-              window.open(node.url, "_blank"); // Abrir el enlace en una nueva pestaña
+              window.location.href = node.url; // Abrir el enlace en la misma pestaña
             });
           }
 

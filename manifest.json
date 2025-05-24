@@ -8,7 +8,7 @@
     "tabs"
   ],
   "chrome_url_overrides": {
-    "newtab": "main.html"
+    "newtab": "index.html"
   },
   "action": {
     "default_title": "Abrir página"

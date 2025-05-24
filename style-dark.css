@@ -1,0 +1,29 @@
+:root {
+  --bg-color-body: #5f6367;
+  --bg-color-header: #686c70;
+  --bg-color-footer: #686c70;
+  --bg-color-link: #ffffff00;
+  --bg-color-link-hover: #686c70;
+
+  --color-header-title: #ffffff;
+  --color-header-button: #b0b0b0;
+  --color-header-button-hover: #ffffff;
+  --color-link: #b0b0b0;
+  --color-link-hover: #ffffff;
+  --color-footer: #ffffff;
+
+  --padding-header: 32px;
+  --padding-body: 64px;
+  --padding-link-vertical: 16px;
+  --padding-footer: 16px;
+
+  --font-size-header-title: 24px;
+  --font-size-header-button: 16px;
+  --font-size-link: 14px;
+  --font-size-footer: 12px;
+  
+  --link-width: 180px;
+  --link-border-radius: 8px;
+  --link-img-width: 64px;
+  --link-gap: 32px 32px;
+}

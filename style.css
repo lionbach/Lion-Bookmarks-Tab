@@ -1,105 +1,104 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 32px 0px;
+    font-family: Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*min-height: 100vh;*/
-    background-color: #f4f4f4;
-}
-
-.icon-back {
-    position: absolute;
-    left: 16px;
-    /* Ajusta según el espacio deseado */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-.icon-back:hover {
-    background-color: #f4f4f4;
-    /* Color al pasar el mouse */
-}
-
-.icon {
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    object-fit: contain;
-}
-
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    width: 80%;
-    /*max-width: 600px;*/
-    text-align: center;
+    min-height: 100vh;
+    background-color: var(--bg-color-body);
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    /* Alinea verticalmente los elementos */
-    justify-content: center;
-    /* Centra horizontalmente el título */
-    position: relative;
-    text-align: center;
-    min-height: 64px;
-    margin-bottom: 64px;
+    display: flex; /* organizar elementos en fila (horizontal) */
+    align-items: center; /* centrar verticalmente los elementos */
+    justify-content: space-between; /* alineacion y espacio horizontalmente los elementos */
+    padding: var(--padding-header);
+    background-color: var(--bg-color-header);
 }
 
 .header h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--font-size-header-title);
+    color: var(--color-header-title);
 }
 
-.items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
-    /* Columnas flexibles */
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+.header a {
+    color: var(--color-header-button);
+    text-decoration: none;
+    font-size: var(--font-size-header-button);
+    font-weight: bold;
+    transition: color 0.2s;
 }
 
-.item {
-    width: 150px;
-    height: 150px;
-    /*background-color: aquamarine;*/
-    display: flex;
-    flex-direction: column;
-    /* Organiza los elementos en columna */
-    align-items: center;
-    /* Centra horizontalmente */
-    justify-content: flex-start;
-    /* Alinea el contenido desde arriba */
-    text-align: center;
-    /* Centra el texto */
-    margin: 8px;
-    border-radius: 8px;
+.header a:hover {
+    color: var(--color-header-button-hover);
 }
 
-.item:hover {
-    background-color: #f4f4f4;
-    /* Color al pasar el mouse */
+.back {
+  visibility: hidden;
 }
 
-.item span {
-    font-size: 16px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    /* Evita que el texto se desborde */
+.expanded-container {
+  flex: 1 0 auto; /* Permite que el contenedor crezca y ocupe el espacio disponible */
 }
 
-body p {
-    margin-top: 32px;
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--link-width), var(--link-width)));
+  gap: var(--link-gap);
+  justify-items: center;
+  padding: var(--padding-body);
+  justify-content: center;
+  align-content: start;
+}
+
+.link {
+  background-color: var(--bg-color-link);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--link-width);
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-link);
+  padding-top: var(--padding-link-vertical);
+  padding-bottom: var(--padding-link-vertical);
+  border-radius: var(--link-border-radius);
+}
+
+.link:hover {
+  background-color: var(--bg-color-link-hover);
+  color: var(--color-link-hover);
+  transition: color 0.2s;
+}
+
+.link-img {
+  width: var(--link-img-width);
+  height: var(--link-img-width);
+}
+
+.link-text {
+  width: 100%; /* ajusta el tamaño para limitar el ancho al ancho del padre */
+  overflow: hidden; /* oculta el desbordamiento */
+  text-overflow: ellipsis; /* agrega puntos suspensivos al final si el texto es demasiado largo */
+  white-space: nowrap; /* evita el salto de línea */
+  display: block;
+  font-size: var(--font-size-link);
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  color: var(--color-footer);
+  background-color: var(--bg-color-footer);
+  padding: var(--padding-footer);
+}
+
+.footer p{
+  margin: 0px;
+  font-size: var(--font-size-footer);
 }

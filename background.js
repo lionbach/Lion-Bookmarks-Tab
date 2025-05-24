@@ -3,6 +3,6 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.action.onClicked.addListener(() => {
-  chrome.tabs.create({ url: chrome.runtime.getURL("main.html") });
+  chrome.tabs.create({ url: chrome.runtime.getURL("index.html") });
   //chrome.tabs.create({ url: chrome.runtime.getURL("test.html") });
 });

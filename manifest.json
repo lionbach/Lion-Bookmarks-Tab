@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Lion Bookmarks Tab",
   "version": "1.0",
-  "description": "Lee y muestra los favoritos del usuario.",
+  "description": "Lee y muestra los favoritos del usuario en una nueva pestaña.",
   "permissions": [
     "bookmarks",
     "tabs"

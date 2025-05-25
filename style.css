@@ -10,6 +10,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--bg-color-body);
+
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #81d4fa);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {

@@ -1,16 +1,16 @@
 :root {
-  --bg-color-body: #5f6367;
-  --bg-color-header: #686c70;
-  --bg-color-footer: #686c70;
+  --bg-color-body: #f1f3f4;
+  --bg-color-header: #00000010;
+  --bg-color-footer: #00000010;
   --bg-color-link: #ffffff00;
-  --bg-color-link-hover: #686c70;
+  --bg-color-link-hover: #00000010;
 
-  --color-header-title: #ffffff;
-  --color-header-button: #b0b0b0;
-  --color-header-button-hover: #ffffff;
-  --color-link: #b0b0b0;
-  --color-link-hover: #ffffff;
-  --color-footer: #ffffff;
+  --color-header-title: #404040;
+  --color-header-button: #808080;
+  --color-header-button-hover: #404040;
+  --color-link: #808080;
+  --color-link-hover: #404040;
+  --color-footer: #404040;
 
   --padding-header: 32px;
   --padding-body: 64px;

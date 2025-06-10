@@ -17,8 +17,10 @@
     "service_worker": "background.js"
   },
   "icons": {
-    "16": "img/bookmark.png",
-    "48": "img/bookmark.png",
-    "128": "img/bookmark.png"
+    "16": "img/bookmarks-color16.png",
+    "32": "img/bookmarks-color32.png",
+    "48": "img/bookmarks-color48.png",
+    "64": "img/bookmarks-color64.png",
+    "128": "img/bookmarks-color128.png"
   }
 }

@@ -11,10 +11,10 @@ body {
     min-height: 100vh;
     background-color: var(--bg-color-body);
 
-    background: linear-gradient(135deg, #e8fbfd, #9ce0ff, #e8fbfd);
+    /*background: linear-gradient(135deg, #ffffff, #eef2ff, #ffffff);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .header {
@@ -39,8 +39,15 @@ body {
     transition: color 0.2s;
 }
 
-.header a:hover {
-    color: var(--color-header-button-hover);
+.header a:hover img {
+  background-color: var(--bg-color-header-hover);
+  transition: color 0.2s;
+}
+
+.header-img {
+  width: var(--header-img-width);
+  height: var(--header-img-width);
+  border-radius: var(--link-border-radius);
 }
 
 .back {

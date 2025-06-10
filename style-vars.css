@@ -1,15 +1,16 @@
 :root {
-  --bg-color-body: #f1f3f4;
-  --bg-color-header: #00000010;
-  --bg-color-footer: #00000010;
-  --bg-color-link: #ffffff00;
-  --bg-color-link-hover: #00000010;
+  --bg-color-body: #ffffff;
+  --bg-color-header: #e0e0eb;
+  --bg-color-header-hover: #c2c2d6;
+  --bg-color-footer: #e0e0eb;
+  --bg-color-link: #ffffff;
+  --bg-color-link-hover: #e0e0eb;
 
-  --color-header-title: #404040;
-  --color-header-button: #808080;
-  --color-header-button-hover: #404040;
-  --color-link: #808080;
-  --color-link-hover: #404040;
+  --color-header-title: #000000;
+  --color-header-button: #404040;
+  --color-header-button-hover: #000000;
+  --color-link: #404040;
+  --color-link-hover: #000000;
   --color-footer: #404040;
 
   --padding-header: 32px;
@@ -25,5 +26,6 @@
   --link-width: 180px;
   --link-border-radius: 8px;
   --link-img-width: 64px;
+  --header-img-width: 48px;
   --link-gap: 32px 32px;
 }

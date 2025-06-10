@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   chrome.bookmarks.getChildren(folderId, function(children) {
     processChildren(children);
   });
+  // Abrir chrome://bookmarks/ al hacer click en el botón de configuración
+  const configBtn = document.getElementById("config");
+  if (configBtn) {
+    configBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      chrome.tabs.update({ url: "chrome://bookmarks/" });
+    });
+  }
 });
 
 function processChildren(children) {
@@ -17,9 +25,9 @@ function processChildren(children) {
   const folders = [];
   children.forEach((child) => {
     if (child.url) {
-      links.push({href:child.url, imgSrc:"img/link.png", title:child.title});
+      links.push({href:child.url, imgSrc:"svg/bookmarks-color.svg", title:child.title});
     } else {
-      folders.push({href:`index.html?folder=${child.id}`, imgSrc:"img/folder.png", title:child.title});
+      folders.push({href:`index.html?folder=${child.id}`, imgSrc:"svg/folder-open-color.svg", title:child.title});
     }
   });
   renderItems(folders);
@@ -47,7 +55,7 @@ function renderItems(items) {
     img.src = imgSrc;
     img.alt = "Icono";
     img.onerror = () => {
-      img.src = "img/link.png";
+      img.src = "svg/bookmarks-color.svg";
     };
     // Crear el span
     const span = document.createElement("span");

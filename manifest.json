@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Lion Bookmarks Tab",
   "version": "1.0",
-  "description": "Lee y muestra los favoritos del usuario en una nueva pestaña.",
+  "description": "Browse your favorites and folders from the new tab screen.",
   "permissions": [
     "bookmarks",
     "tabs"
@@ -11,7 +11,7 @@
     "newtab": "index.html"
   },
   "action": {
-    "default_title": "Abrir página"
+    "default_title": "Lion Bookmarks Tab"
   },
   "background": {
     "service_worker": "background.js"

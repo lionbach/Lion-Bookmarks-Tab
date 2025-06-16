@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "Browse your favorites and folders from the new tab screen.",
   "permissions": [
-    "bookmarks",
-    "tabs"
+    "bookmarks"
   ],
   "chrome_url_overrides": {
     "newtab": "index.html"
